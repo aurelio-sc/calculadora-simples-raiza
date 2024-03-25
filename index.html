@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora Simples</title>
+  <link rel="stylesheet" href="css/main.min.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Calculadora Simples</h1>
+    <input class="numero-digitado" type="number" name="numero-um" id="numero-um" autocomplete="off">
+    <input class="numero-digitado" type="number" name="numero-dois" id="numero-dois" autocomplete="off">
+
+    <div class="checks">
+      <input checked type="radio" name="opcoes" id="opcao1" value="+"><b>+</b>
+      <input type="radio" name="opcoes" id="opcao2" value="-"><b>-</b>
+      <input type="radio" name="opcoes" id="opcao3" value="*"><b>*</b>
+      <input type="radio" name="opcoes" id="opcao4" value="/"><b>/</b>
+    </div>
+    <button onclick="calcular()" type="button">Calcular</button>
+    <h2 id="resultado"></h2>
+  </div>
+  
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
